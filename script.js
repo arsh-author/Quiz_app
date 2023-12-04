@@ -74,7 +74,7 @@ function resetState(){
 
 function selectAnswer(e){
     const selectedBtn=e.target;
-    const iscorrect=selectedBtn.dataset.correct==true
+    const iscorrect=selectedBtn.dataset.correct=="true";
     if (iscorrect){
         selectedBtn.classList.add("correct");
         score++;
